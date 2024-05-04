@@ -1,0 +1,35 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: @color-primary;
+    position: relative;
+    margin:auto;
+    text-align: center;
+    padding: 5px 8px;
+    .display-flex();
+    &-content {
+        background-color: @color-content;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        .border(2px, @color-border);
+        .buttons {
+            margin-top: 30px;
+        }
+        h2 {
+            margin: 25px 0;
+        }
+    }
+    
+    h1{
+        color: @color-content;
+    }
+    .footer {
+        background-color: @color-black;
+        color: @color-content;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+}
